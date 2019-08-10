@@ -1,6 +1,8 @@
-import gtk
+import gi
+gi.require_version("Gtk", "3.0")
+from gi.repository import Gtk
 
-class Model(gtk.ListStore):
+class Model(Gtk.ListStore):
 
     def __init__(self):
         super(Model, self).__init__(str, str)

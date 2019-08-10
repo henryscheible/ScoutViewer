@@ -11,7 +11,7 @@ class App(Gtk.Window):
         self.set_title("ScoutViewer")
         
         self.notebook = Gtk.Notebook()
-        self.notebook.set_tab_pos(Gtk.POS_BOTTOM)
+        self.notebook.set_tab_pos(Gtk.PositionType.BOTTOM)
         self.logger.append("Adding Views...")
         self.add_view(Dataview)
         self.logger.append("Adding Notebook...")

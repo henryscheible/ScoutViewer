@@ -1,5 +1,5 @@
-from table import Table 
-from model import Model 
+from dataview.table import Table
+from dataview.model import Model
 
 model = Model()
 
